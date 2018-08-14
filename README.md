@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Travis build: [![Build Status](https://travis-ci.org/understrap/understrap.svg?branch=master)](https://travis-ci.org/understrap/understrap)
 
 #### See: [Official Demo](https://understrap.com/understrap) | Read: [Official Docs Page](https://understrap.github.io/)
@@ -150,3 +151,7 @@ and of course
 
 
 [![Analytics](https://ga-beacon.appspot.com/UA-139292-31/chromeskel_a/readme)](https://github.com/igrigorik/ga-beacon)
+=======
+# al3d
+Underscores development for al3d website
+>>>>>>> 263cf47edf03a67cbdd52f0f91204f6b2b583108
