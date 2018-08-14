@@ -1,16 +1,18 @@
 /* mobile menu overrides */
+
 .mobmenu-push-wrap,
 body.mob-menu-slideout-over {
-	padding-top: 90px!important;
+	padding-top: 0!important;
 
 	@include media-breakpoint-up(sm) {
-		padding-top: 140px!important;
+		// padding-top: 140px!important;
 	}
 }
 
 .mob-menu-header-holder {
 	padding: 30px;
 	height: auto!important;
+	background: rgba(255, 255, 255, 0.33);
 
 	@include media-breakpoint-up(sm) {
 		padding: 50px;
