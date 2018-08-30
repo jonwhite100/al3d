@@ -9,10 +9,28 @@ body.mob-menu-slideout-over {
 	}
 }
 
+.mobmenur-container i {
+	color: $white;
+}
+
 .mob-menu-header-holder {
 	padding: 30px;
 	height: auto!important;
-	background: rgba(255, 255, 255, 0.33);
+	background-color: $white!important;
+
+	// Shrink the header
+	&.shrink {
+		top: 0!important;
+		height:50px!important;
+		padding: 7px 50px!important;
+		background-color: rgba(250, 250, 250, 1)!important;
+		transition: all 0.25s ease-in-out;
+
+		.mob-standard-logo {
+		  height: 25px !important;
+		  transition: all 0.25s ease-in-out;
+		}
+	}
 
 	@include media-breakpoint-up(sm) {
 		padding: 50px;
@@ -30,5 +48,17 @@ body.mob-menu-slideout-over {
 	@include media-breakpoint-up(sm) {
 		top: 50px!important;
 		right: 50px!important;
+
+		.shrink & {
+			top: 7px!important;
+			right: 15px!important;
+			transition: all 0.25s ease-in-out;
+		}
+	}
+
+	.shrink & {
+		top: 7px!important;
+		right: 15px!important;
+		transition: all 0.25s ease-in-out;
 	}
 }

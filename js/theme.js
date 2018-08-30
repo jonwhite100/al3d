@@ -3976,3 +3976,23 @@
 		}, false );
 	}
 })();
+
+
+(function () {
+  var $window = $(window);
+  var $buttonTop = $('.button-top');
+
+  $buttonTop.on('click', function () {
+    $('html, body').animate({
+      scrollTop: 0,
+    }, 400);
+  });
+
+  $window.on('scroll', function () {
+    if ($window.scrollTop() > 100) { // 100 is our threshold in pixels
+      $buttonTop.addClass('button-top-visible');
+    } else {
+      $buttonTop.removeClass('button-top-visible');
+    }
+  });
+})();

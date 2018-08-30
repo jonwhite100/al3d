@@ -4,12 +4,53 @@
     display: none;
   }
 
-  .mobmenu {
-      top: 0;
-      background-color: rgba(255, 255, 255, 0.33);
-  }
-
   .wrapper {
     padding-top: 0;
   }
+}
+
+.m__large {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+// Blog posts
+.site-main {
+    .post {
+        text-align: left;
+
+        .entry-header {
+            width: 100%;
+            margin: 0 auto 40px;
+        }
+
+        .entry-meta {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .entry-content {
+            width: 100%;
+            margin: 40px auto;
+        }
+
+        .entry-footer {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+
+    @include media-breakpoint-up(sm) {
+        .post {
+            .entry-header,
+            .entry-content {
+                width: 80%;
+            }
+        }
+    }
 }
